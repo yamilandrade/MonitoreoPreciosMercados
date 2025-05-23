@@ -157,19 +157,19 @@ export const NavigationItems: NavigationItem[] = [
   },
   {
     id: 'pages',
-    title: 'Pages',
+    title: 'Inicio de Sesión',
     type: 'group',
     icon: 'icon-pages',
     children: [
       {
         id: 'auth',
-        title: 'Authentication',
+        title: 'Autenticación',
         type: 'collapse',
         icon: 'feather icon-lock',
         children: [
           {
             id: 'signup',
-            title: 'Sign up',
+            title: 'Registrar Usuario',
             type: 'item',
             url: '/auth/signup',
             target: true,
@@ -177,7 +177,7 @@ export const NavigationItems: NavigationItem[] = [
           },
           {
             id: 'signin',
-            title: 'Sign in',
+            title: 'Iniciar Sesión',
             type: 'item',
             url: '/auth/signin',
             target: true,
