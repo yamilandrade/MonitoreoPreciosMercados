@@ -36,7 +36,15 @@ const routes: Routes = [
       {
         path: 'sample-page',
         loadComponent: () => import('./demo/extra/sample-page/sample-page.component')
-      }
+      },
+      {
+        path: 'admin',
+        loadChildren: () => import('./monitoreo/admin/admin.module').then((m) => m.AdminModule)
+      },
+      {
+        path: 'funcionario',
+        loadChildren: () => import('./monitoreo/funcionario/funcionario.module').then((m) => m.FuncionarioModule)
+      },
     ]
   },
   {
